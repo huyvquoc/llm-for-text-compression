@@ -1,6 +1,8 @@
-# LLMzip 
+# Course project: use LLM for compression
 
-This repository contains the code for our paper [LLMZip: Lossless Text Compression using Large Language Models](https://arxiv.org/abs/2306.04050)
+My modifications on the LLMZip repo for running experiments for my course project. Please have a look at the authors' original repo [LLMZip](https://github.com/vcskaushik/LLMzip) for more information.
+
+Please read the original paper [LLMZip: Lossless Text Compression using Large Language Models](https://arxiv.org/abs/2306.04050)
 
  
 ## Setup
@@ -79,24 +81,14 @@ Different models require different MP values:
 | 33B    | 4  |
 | 65B    | 8  |
 
-## FAQ
+## My comments:
+Please have a look at the `scripts` subfolder for commands to run this project:
 
-- [1. The download.sh script doesn't work on default bash in MacOS X](FAQ.md#1)
-- [2. Generations are bad!](FAQ.md#2)
-- [3. CUDA Out of memory errors](FAQ.md#3)
-- [4. Other languages](FAQ.md#4)
-
-## Reference
-
-LLaMA: Open and Efficient Foundation Language Models -- https://arxiv.org/abs/2302.13971
-
-```
-@article{touvron2023llama,
-  title={LLaMA: Open and Efficient Foundation Language Models},
-  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
-  journal={arXiv preprint arXiv:2302.13971},
-  year={2023}
-}
+```sh
+./scripts/run1.sh
+./scripts/run2.sh
+./scripts/run1_only_binary.sh
+./scripts/run2_only_binary.sh
 ```
 
 ## Model Card
